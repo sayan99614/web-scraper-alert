@@ -4,7 +4,8 @@ const dotenv = require('dotenv');
 dotenv.config();
 async function getPrice(url) {
   const browser = await puppeteer.launch({
-    headless:true
+    headless:true,
+    executablePath: '/usr/bin/chromium-browser'
   });
   const page = await browser.newPage();
 
