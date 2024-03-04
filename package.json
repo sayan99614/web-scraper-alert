@@ -13,5 +13,8 @@
     "dotenv": "^16.4.5",
     "nodemailer": "^6.9.11",
     "puppeteer": "^22.3.0"
+  },
+  "devDependencies": {
+    "chromium": "^3.0.3"
   }
 }

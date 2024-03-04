@@ -3,7 +3,9 @@ const nodemailer = require("nodemailer");
 const dotenv = require('dotenv');
 dotenv.config();
 async function getPrice(url) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless:true
+  });
   const page = await browser.newPage();
 
   await page.goto(url);
